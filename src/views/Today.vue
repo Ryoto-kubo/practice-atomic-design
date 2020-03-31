@@ -1,6 +1,7 @@
 <template>
 	<div>
-		<h1>This is Today.vue</h1>
+		<v-progress-linear color="grey" value="10" height="40" striped></v-progress-linear>
+		<br>
 		<MyButton btnTitle='Active' :btnClickMethod="addClicked" />
 	</div>
 </template>

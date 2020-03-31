@@ -19,8 +19,8 @@ export default new Vuex.Store({
     changeToday({ today }) {
       today = new Date()
     },
-	addClicked({ clicked }, nowClicked) {
-		clicked.push(nowClicked)
+	addClicked({ clicked }) {
+		clicked.push(Date.now())
 	}
   },
   getters: {
