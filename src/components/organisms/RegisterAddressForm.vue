@@ -4,24 +4,38 @@
         <v-card-text>
             <TextField textFieldLabel="電話番号" :value="phoneNumber" @change="changePhoneNumber" />
             <TextField textFieldLabel="メールアドレス" :value="mailAddress" @change="changeMailAddress" />
-            <MyButton btnTitle="保存" />
+            <v-btn @click.stop="dialog = true">保存</v-btn>
+            <v-row justify="center">
+                <v-dialog v-model="dialog" max-width="300">
+                    <v-card>
+                        <v-card-text>
+                            バックエンドの実装は、まだ完了していません。
+                        </v-card-text>
+                        <v-card-actions>
+                            <v-btn @click="dialog = false">
+                                了解
+                            </v-btn>
+                        </v-card-actions>
+                    </v-card>
+                </v-dialog>
+            </v-row>
         </v-card-text>
     </v-card>
 </template>
 
 <script>
-import MyButton from '../atoms/MyButton.vue'
 import TextField from '../atoms/TextField.vue'
 
 export default {
     components: {
-        MyButton,
+        // MyButton,
         TextField
     },
     data() {
         return {
             phoneNumber: '',
-            mailAddress: ''
+            mailAddress: '',
+            dialog: false
         }
     },
     methods: {
@@ -30,6 +44,9 @@ export default {
         },
         changeMailAddress(changedMailAddress) {
             this.mailAddress = changedMailAddress
+        },
+        changeDialogPropaty() {
+            this.dialog = !this.dialog
         }
     }
 }
