@@ -1,24 +1,26 @@
 # timestamp
 
-## Project setup
+## プロジェクトセットアップ
 ```
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### ローカルサーバー立ち上げ
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### ビルド
 ```
 npm run build
 ```
 
-### Lints and fixes files
+### 文法チェック
 ```
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### 以下のURLからアクセスできます
+```
+https://practice-atomic-design.firebaseapp.com/
+```
