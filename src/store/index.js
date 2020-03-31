@@ -5,11 +5,27 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    nowState: '',
+    today: null,
+    clicked: []
   },
   mutations: {
+	toActive({ nowState }) {
+      nowState = 'active'
+    },
+    toRest({ nowState }) {
+      nowState = 'rest'
+    },
+    changeToday({ today }) {
+      today = new Date()
+    },
+	addClicked({ clicked }) {
+		clicked.push(Date.now())
+	}
   },
-  actions: {
-  },
-  modules: {
+  getters: {
+    clicked({ clicked }) {
+      return clicked
+    }
   }
 })

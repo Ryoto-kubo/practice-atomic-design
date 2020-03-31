@@ -1,20 +1,20 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Today from '../views/Today.vue'
-import TodayList from '../views/TodayList.vue'
+import RegisterAddress from '../views/RegisterAddress.vue'
+import TimeSchedule from '../views/TimeSchedule.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'Today',
-    component: Today
+    name: 'RegisterAddress',
+    component: RegisterAddress
   },
   {
-    path: '/list',
-    name: 'TodayList',
-    component: TodayList
+    path: '/timeschedule',
+    name: 'TimeSchedule',
+    component: TimeSchedule
   }
 ]
 
