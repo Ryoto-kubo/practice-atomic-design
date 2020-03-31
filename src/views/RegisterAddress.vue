@@ -1,9 +1,13 @@
 <template>
+    <RegisterAddressForm />
 </template>
 
 <script>
-import MyButton from '../components/atoms/MyButton.vue'
+import RegisterAddressForm from '../components/organisms/RegisterAddressForm.vue'
 
 export default {
+    components: {
+        RegisterAddressForm
+    }
 }
 </script>
