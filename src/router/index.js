@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import RegisterAddress from '../views/RegisterAddress.vue'
-import TodayList from '../views/TodayList.vue'
+import TimeSchedule from '../views/TimeSchedule.vue'
 
 Vue.use(VueRouter)
 
@@ -12,9 +12,9 @@ const routes = [
     component: RegisterAddress
   },
   {
-    path: '/list',
-    name: 'TodayList',
-    component: TodayList
+    path: '/timeschedule',
+    name: 'TimeSchedule',
+    component: TimeSchedule
   }
 ]
 
