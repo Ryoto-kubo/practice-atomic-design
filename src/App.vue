@@ -6,17 +6,17 @@
       clipped
     >
       <v-list dense>
-        <v-list-item link>
+        <v-list-item link to="/">
           <v-list-item-content>
             <v-list-item-title>連絡先登録</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item link>
+        <v-list-item link to="infos">
           <v-list-item-content>
 			  <v-list-item-title>お知らせ</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
-        <v-list-item link>
+        <v-list-item link to="timeschedule">
           <v-list-item-content>
 			  <v-list-item-title>履修登録</v-list-item-title>
           </v-list-item-content>
