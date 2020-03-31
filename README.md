@@ -22,6 +22,5 @@ npm run lint
 ```
 
 ### 以下のURLからアクセスできます
-```
 https://practice-atomic-design.firebaseapp.com/
-```
+
