@@ -19,12 +19,13 @@ export default new Vuex.Store({
     changeToday({ today }) {
       today = new Date()
     },
-	clicked({ clicked }, nowClicked) {
+	addClicked({ clicked }, nowClicked) {
 		clicked.push(nowClicked)
 	}
   },
-  actions: {
-  },
-  modules: {
+  getters: {
+    clicked({ clicked }) {
+      return clicked
+    }
   }
 })
