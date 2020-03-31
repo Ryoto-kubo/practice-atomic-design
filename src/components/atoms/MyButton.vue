@@ -9,7 +9,8 @@ export default {
             type: String
         },
         btnClickMethod: {
-            type: Function
+            type: Function,
+            default: () => {}
         }
     }
 }

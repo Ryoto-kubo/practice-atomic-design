@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import RegisterAddress from '../views/RegisterAddress.vue'
 import TimeSchedule from '../views/TimeSchedule.vue'
+import InfoBoard from '../views/InfoBoard.vue'
 
 Vue.use(VueRouter)
 
@@ -15,6 +16,11 @@ const routes = [
     path: '/timeschedule',
     name: 'TimeSchedule',
     component: TimeSchedule
+  },
+  {
+    path: '/infos',
+    name: 'InfoBoard',
+    component: InfoBoard
   }
 ]
 
