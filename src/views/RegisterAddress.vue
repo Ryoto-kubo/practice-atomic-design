@@ -3,6 +3,9 @@
 		<v-progress-linear color="grey" value="10" height="40" striped></v-progress-linear>
 		<br>
 		<MyButton btnTitle='Active' :btnClickMethod="addClicked" />
+		<pre>
+			{{ $store.getters.clicked }}
+		</pre>
 	</div>
 </template>
 

@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Today from '../views/Today.vue'
+import RegisterAddress from '../views/RegisterAddress.vue'
 import TodayList from '../views/TodayList.vue'
 
 Vue.use(VueRouter)
@@ -8,8 +8,8 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'Today',
-    component: Today
+    name: 'RegisterAddress',
+    component: RegisterAddress
   },
   {
     path: '/list',
