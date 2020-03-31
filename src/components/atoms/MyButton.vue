@@ -4,8 +4,10 @@
 
 <script>
 export default {
-    props: [
-        'btnTitle'
-    ]
+    props: {
+        btnTitle: {
+            type: String
+        }
+    }
 }
 </script>
