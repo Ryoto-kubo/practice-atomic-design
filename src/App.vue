@@ -7,13 +7,18 @@
     >
       <v-list dense>
         <v-list-item link>
-		  <v-list-item-content>
-			  <v-list-item-title>Home</v-list-item-title>
-		  </v-list-item-content>
+          <v-list-item-content>
+            <v-list-item-title>連絡先登録</v-list-item-title>
+          </v-list-item-content>
         </v-list-item>
         <v-list-item link>
           <v-list-item-content>
-			  <v-list-item-title>List</v-list-item-title>
+			  <v-list-item-title>お知らせ</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item link>
+          <v-list-item-content>
+			  <v-list-item-title>履修登録</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -24,7 +29,7 @@
       clipped-left
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-toolbar-title>Timestamps</v-toolbar-title>
+      <v-toolbar-title>履修登録</v-toolbar-title>
     </v-app-bar>
 
     <v-content>
